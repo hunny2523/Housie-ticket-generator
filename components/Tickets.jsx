@@ -120,7 +120,7 @@ const Tickets = ({ number }) => {
         let height = 0
 
         for (let i = 0; i < sections.length; i++) {
-            height = parseInt(270 * (sections[i].childElementCount / 4))
+            height = parseInt(270 * (sections[i].childElementCount / 6))
             const canvas = await html2canvas(sections[i])
             const imageData = canvas.toDataURL('image/png')
             pdf.addImage(imageData, 'PNG', 23, 12, 160, height)
