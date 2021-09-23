@@ -91,7 +91,7 @@ const Tickets = ({ number }) => {
         let counter = 0
 
         for (let i = 0; i < number; i++) {
-            if (counter === 4) {
+            if (counter === 6) {
                 counter = 0
                 allTables.push(<div className="section" key={uuidv4()}>{temp}</div>)
                 temp = []
