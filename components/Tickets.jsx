@@ -42,7 +42,7 @@ const Tickets = ({ number }) => {
         }
         console.log(data)
 
-        for (let i = 0; i < 9; i++) {
+        for (let i = 0; i < 10; i++) {
             col = []
             for (let j = 0; j < 3; j++) {
                 if (data[j].includes(i)) {
@@ -70,7 +70,7 @@ const Tickets = ({ number }) => {
 
         for (let i = 0; i < 3; i++) {
             TDs = []
-            for (let j = 0; j < 9; j++) {
+            for (let j = 0; j < 10; j++) {
                 if (!isNaN(data[j][i])) {
                     TDs.push(<td key={uuidv4()}>{data[j][i]}</td>)
                 } else {
